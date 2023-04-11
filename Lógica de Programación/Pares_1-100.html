@@ -1,0 +1,25 @@
+<meta charset="utf-8">
+
+<h1>PROGRAMA - PARES DEL 1 AL 100</h1>
+
+<script type="text/javascript">
+	
+	const saltarLinea = () =>{
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	const imprimir = frase =>{
+		document.write(frase);
+		saltarLinea();
+	}
+
+	let i = 1;
+
+	for( i = 1 ; i <= 100; i++){
+		if( i % 2 == 0){
+			imprimir(" Valor: " + i);
+		}
+	}
+
+</script>

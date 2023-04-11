@@ -1,0 +1,38 @@
+<meta charset="utf-8">
+
+<h1>PROGRAMA - ADIVINA EL NÚMERO</h1>
+
+<script type="text/javascript">
+	
+	const saltarLinea = () =>{
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	const imprimir = frase =>{
+		document.write(frase);
+		saltarLinea();
+	}
+
+	const sorteo = n =>{
+		numeroSorteado = Math.round(Math.random()*n);
+		return numeroSorteado;
+	}
+
+
+	let numeroPensado = sorteo(10);
+	let numeroLanzado = parseInt(prompt("Ingrese un número entre 0 y 10."))
+
+	if ( numeroPensado == numeroLanzado ){
+
+		imprimir("Usted acertó");
+	}else{
+		if (numeroLanzado > numeroPensado){
+			imprimir("El número pensado era menor que tu número");
+       } 
+        else{
+        	imprimir("El número pensado era mayor que tu número");
+        }
+	}
+
+</script>
