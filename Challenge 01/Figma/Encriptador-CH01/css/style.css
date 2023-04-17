@@ -1,0 +1,14 @@
+:root {
+  --purple-light: #CEC3FB;
+  --white: #ffffff;
+  --green-light: #E0FAAA;
+  --black: #000000;
+  --blue-light: #B6CDFA;
+  --yellow-light: #FAF1DC;
+  --pink-light: #EFCFFA;
+}
+
+body * {
+  display: block;
+  margin: 0 auto;
+}
